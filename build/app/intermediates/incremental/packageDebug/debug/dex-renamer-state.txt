@@ -1,0 +1,4 @@
+#Thu May 24 17:21:30 CST 2018
+base.0=/Users/laileon/Documents/AndroidProjects/stocks/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
