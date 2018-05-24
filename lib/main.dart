@@ -27,7 +27,7 @@ class _StocksLocalizationsDelegate extends LocalizationsDelegate<StockStrings> {
   Future<StockStrings> load(Locale locale) => StockStrings.load(locale);
 
   @override
-  bool isSupported(Locale locale) => locale.languageCode == 'es' || locale.languageCode == 'en';
+  bool isSupported(Locale locale) => locale.languageCode == 'es' || locale.languageCode == 'en' || locale.languageCode == 'zh';
 
   @override
   bool shouldReload(_StocksLocalizationsDelegate old) => false;
@@ -130,6 +130,7 @@ class StocksAppState extends State<StocksApp> {
       supportedLocales: const <Locale>[
         const Locale('en', 'US'),
         const Locale('es', 'ES'),
+        const Locale('zh', 'zh-CN'),
       ],
       debugShowMaterialGrid: _configuration.debugShowGrid,
       showPerformanceOverlay: _configuration.showPerformanceOverlay,

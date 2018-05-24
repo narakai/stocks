@@ -4,8 +4,8 @@
 
 import 'dart:async';
 
-import 'package:intl/intl.dart';
 import 'package:flutter/widgets.dart';
+import 'package:intl/intl.dart';
 
 import 'i18n/stock_messages_all.dart';
 
@@ -20,6 +20,7 @@ class StockStrings {
   static Future<StockStrings> load(Locale locale) {
     return initializeMessages(locale.toString())
       .then((Object _) {
+//        print(locale.languageCode);
         return new StockStrings(locale);
       });
   }
